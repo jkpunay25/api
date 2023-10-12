@@ -1,17 +1,17 @@
 "# api" 
 # API Name
-A: Demo API
+- Demo API
 
 Brief description of your API.
-A: The "Demo API" is a simple RESTful API for managing names in a MySQL database. It supports creating, retrieving, updating, and deleting name records.
+- The "Demo API" is a simple RESTful API for managing names in a MySQL database. It supports creating, retrieving, updating, and deleting name records.
  
 ## API
 Description
-A: This API is a basic RESTful API for managing names in a database. It provides endpoints for creating, retrieving, updating, and deleting name records.
+- This API is a basic RESTful API for managing names in a database. It provides endpoints for creating, retrieving, updating, and deleting name records.
 
 Provide a more
 detailed explanation of what your API does, its purpose, and any key features.
-A: The "Demo API" is a basic RESTful API for managing name records in a MySQL database, supporting standard CRUD operations: Create, Read, Update, and Delete. While it provides a simple framework, it lacks advanced features like data validation and secure database connections, making it suitable primarily for educational purposes and as a starting point for more complex API development.
+- The "Demo API" is a basic RESTful API for managing name records in a MySQL database, supporting standard CRUD operations: Create, Read, Update, and Delete. While it provides a simple framework, it lacks advanced features like data validation and secure database connections, making it suitable primarily for educational purposes and as a starting point for more complex API development.
  
 
 
@@ -47,8 +47,8 @@ Payload
 Explain the
 structure of the request payload, including any required or optional fields.
 You can use JSON examples to illustrate.
-A:
-JSON Payload Name:
+
+- JSON Payload Name:
 
 JSON Payload postName:
 Request payload:
@@ -72,8 +72,7 @@ Request payload:
 Describe the
 structure of the API response, including possible status codes and JSON
 examples.
-A:
-JSON Payload Name:
+- JSON Payload Name:
 
 Response payload:
 { "status":"success","data":null }
@@ -95,7 +94,7 @@ Response payload:
 Provide code
 examples or instructions on how to use your API.
 
-A: Using Postman to Interact with the API
+- Using Postman to Interact with the API
 
 Launch Postman: Ensure that Postman is installed and ready for use on your system.
 
@@ -128,7 +127,7 @@ Click "Send" to initiate the deletion request.
 Mention the
 license under which your API is distributed.
 
-A: No License.
+- No License.
  
 ## Contributors
 List
