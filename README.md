@@ -20,23 +20,23 @@ Endpoints
 Describe the
 available endpoints, their functions, and the required parameters.
 
-1. Insert Data (POST/postName)
+1. Insert Data (POST/postName) http://127.0.0.1/api/public/postName
    - Description: Insert a new name into the database.
    - Method: POST
    - Required Parameters:
        - fname'(string): First name.
        - lname'(string): Last name.
-2. Retrieve Data (GET/getName)
+2. Retrieve Data (GET/getName) http://127.0.0.1/api/public/printName
    - Description: Retrieve a list of names from the database.
    - Method: GET
-3. Update Data (POST/updateName)
+3. Update Data (POST/updateName) http://127.0.0.1/api/public/updateName
    - Description: Update an existing name record in the database.
    - Method: POST
    - Required Parameters:
        - 'id' (int): The unique identifier of the name.
        - 'fname' (string): New first name.
        - 'lname' (string): New last name.
-4. Delete Data(POST/deleteName)
+4. Delete Data(POST/deleteName) http://127.0.0.1/api/public/deleteName
    - Description: Delete a name record from the database.
    - Method: POST
    - Required Parameters:
@@ -48,20 +48,23 @@ Explain the
 structure of the request payload, including any required or optional fields.
 You can use JSON examples to illustrate.
 A:
-1. Insert Data (POST/postName)
-- Structure of the request payload:
-{
-  "fname": "Kathlene",
-  "lname": "Punay"
-}
+JSON Payload Name:
 
-2. Update Data (POST/updateName)
-- Structure of the request payload:
-{
-    "id": 1,
-    "fname": "Vanesa",
-    "lname": "Salvador"
-}
+JSON Payload postName:
+Request payload:
+{ "lname":"hortizuela", "fname":"manny" }
+JSON Payload printName:
+
+Request payload:
+
+JSON Payload updateName:
+
+Request payload:
+{ "id":1, "lname":"wick", "fname":"john" }
+JSON Payload deleteName:
+
+Request payload:
+{ "id":1 }
 
 
  
@@ -70,50 +73,76 @@ Describe the
 structure of the API response, including possible status codes and JSON
 examples.
 A:
-- Structure of the API response:
-Success (Status Code: 200):
-{
-    "status": "success",
-    "data": {...}  // Data varies based on the endpoint
-}
+JSON Payload Name:
 
-Error (Status Code: 500):
-{
-    "status": "error",
-    "message": "An error message here"
-}
+Response payload:
+{ "status":"success","data":null }
+JSON Payload printName:
 
+Response payload:
+{ "status":"success","data":["lname":"hortizuela","fname":"manny","lname":"licayan","fname":"arnold"] }
+JSON Payload updateName:
+
+Response payload:
+{ "status":"success","data":null }
+JSON Payload deleteName:
+
+Response payload:
+{ "status":"success","data":null }
  
  
 ## Usage
 Provide code
 examples or instructions on how to use your API.
-A: You can use this API to perform CRUD operations on name records in the database. Below are some code examples:
-Insert Data:
-curl -X POST http://your-api-url/postName -d '{"fname": "Kathlene", "lname": "Punay"}'
 
-Retrieve Data:
-curl http://your-api-url/getName
+A: Using Postman to Interact with the API
 
-Update Data:
-curl -X POST http://your-api-url/updateName -d '{"id": 1, "fname": "Vanesa", "lname": "Salvador"}'
+Launch Postman: Ensure that Postman is installed and ready for use on your system.
 
-Delete Data:
-curl -X POST http://your-api-url/deleteName -d '{"id": 1}'
+Insert Data into the Database:
+
+Choose the HTTP method as "POST."
+Input the URL: http://127.0.0.1/api/public/postName.
+In the request body, provide the parameters "fname" and "lname" with the values you want to insert.
+Click the "Send" button to execute the request.
+Update Existing Data:
+
+Select the HTTP method as "POST."
+Enter the URL: http://127.0.0.1/api/public/updateName.
+Include the parameters "id," "fname," and "lname" in the request body with the updated values.
+Click "Send" to submit the request.
+Retrieve Data from the Database:
+
+Choose the HTTP method as "GET."
+Specify the URL: http://127.0.0.1/api/public/printName.
+Keep the request body empty, as no additional parameters are needed.
+Click "Send" to retrieve the data.
+Delete Data from the Database:
+
+Set the HTTP method to "POST."
+Enter the URL: http://127.0.0.1/api/public/deleteName.
+In the request body, include the "id" parameter with the ID of the data you wish to delete.
+Click "Send" to initiate the deletion request.
 
 ## License
 Mention the
 license under which your API is distributed.
 
-A: This API is distributed under the MIT License.
+A: No License.
  
 ## Contributors
 List
 contributors or give credit to any external libraries or resources used.
 
-A: Dr. Manny R. Hortizuela
+Dr. Manny Hortizuela:
+ - some codes
+ - structure of the database
+ - payloads
+ - others
 
 ## Contact
 Information
 
 Name: Kathlene Punay
+Email: kathlene.punay@student.dmmmsu.edu.ph
+Number: 09474892584
