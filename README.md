@@ -48,7 +48,7 @@ Explain the
 structure of the request payload, including any required or optional fields.
 You can use JSON examples to illustrate.
 
-- JSON Payload Name:
+JSON Payload Name:
 
 JSON Payload postName:
 Request payload:
@@ -72,7 +72,7 @@ Request payload:
 Describe the
 structure of the API response, including possible status codes and JSON
 examples.
-- JSON Payload Name:
+JSON Payload Name:
 
 Response payload:
 { "status":"success","data":null }
@@ -94,7 +94,7 @@ Response payload:
 Provide code
 examples or instructions on how to use your API.
 
-- Using Postman to Interact with the API
+Using Postman to Interact with the API
 
 Launch Postman: Ensure that Postman is installed and ready for use on your system.
 
