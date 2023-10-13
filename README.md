@@ -1,8 +1,6 @@
 "# api" 
-# API Name
-- Demo API
+# Demo API
 
-Brief description of your API.
 - The "Demo API" is a simple RESTful API for managing names in a MySQL database. It supports creating, retrieving, updating, and deleting name records.
  
 ## API
