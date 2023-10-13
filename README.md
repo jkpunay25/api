@@ -3,20 +3,15 @@
 
 - The "Demo API" is a simple RESTful API for managing names in a MySQL database. It supports creating, retrieving, updating, and deleting name records.
  
-## API
-Description
+## API Description
 - This API is a basic RESTful API for managing names in a database. It provides endpoints for creating, retrieving, updating, and deleting name records.
 
-Provide a more
-detailed explanation of what your API does, its purpose, and any key features.
+## Detailed Description
 - The "Demo API" is a basic RESTful API for managing name records in a MySQL database, supporting standard CRUD operations: Create, Read, Update, and Delete. While it provides a simple framework, it lacks advanced features like data validation and secure database connections, making it suitable primarily for educational purposes and as a starting point for more complex API development.
  
 
 
-## API
-Endpoints
-Describe the
-available endpoints, their functions, and the required parameters.
+## API Endpoints
 
 1. Insert Data (POST/postName) http://127.0.0.1/api/public/postName
    - Description: Insert a new name into the database.
@@ -40,11 +35,7 @@ available endpoints, their functions, and the required parameters.
    - Required Parameters:
        - 'id' (int): The unique identifier of the name to be deleted.
 
-## Request
-Payload
-Explain the
-structure of the request payload, including any required or optional fields.
-You can use JSON examples to illustrate.
+## Request Payload
 
 JSON Payload Name:
 
@@ -66,10 +57,8 @@ Request payload:
 
 
  
-## Response
-Describe the
-structure of the API response, including possible status codes and JSON
-examples.
+## Response Payload
+
 JSON Payload Name:
 
 Response payload:
@@ -89,8 +78,6 @@ Response payload:
  
  
 ## Usage
-Provide code
-examples or instructions on how to use your API.
 
 Using Postman to Interact with the API
 
@@ -122,14 +109,10 @@ In the request body, include the "id" parameter with the ID of the data you wish
 Click "Send" to initiate the deletion request.
 
 ## License
-Mention the
-license under which your API is distributed.
 
 - No License.
  
 ## Contributors
-List
-contributors or give credit to any external libraries or resources used.
 
 Dr. Manny Hortizuela:
  - some codes
@@ -137,8 +120,7 @@ Dr. Manny Hortizuela:
  - payloads
  - others
 
-## Contact
-Information
+## Contact Information
 
 Name: Kathlene Punay
 Email: kathlene.punay@student.dmmmsu.edu.ph
